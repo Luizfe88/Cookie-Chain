@@ -2,7 +2,7 @@
 
 CookieHub is an innovative, fast, and community-driven Web3 application built exclusively on the **Cookie Chain (SVM)**. It demonstrates the power of sub-second finality, extremely low transaction fees (~$0.05), and seamless integration with the **Nightly Wallet**.
 
-> **Live Application URL**: [Insert your Vercel/Netlify URL here]
+> **Live Application URL**: [https://cookiechan-gh3j3utu9-landmark5.vercel.app](https://cookiechan-gh3j3utu9-landmark5.vercel.app)
 > **GitHub Repository**: [https://github.com/Luizfe88/Cookie-Chain](https://github.com/Luizfe88/Cookie-Chain)
 
 ## 🎯 Features
@@ -53,7 +53,7 @@ Below is a template you can use to fulfill the Demo Requirements:
 Just built CookieHub 🍪 on the blazing-fast @TheCookieChain! 🚀 
 CookieHub is a decentralized dashboard that lets you manage your balances and send transactions with sub-second finality. 
 Built using the SVM infrastructure. Check it out! 👇
-[Link to your Live URL] #CookieChain #BuildOnCookie
+[https://cookiechan-gh3j3utu9-landmark5.vercel.app](https://cookiechan-gh3j3utu9-landmark5.vercel.app) #CookieChain #BuildOnCookie
 
 **Tweet 2:**
 🔌 Wallet Connection: CookieHub fully integrates with @Nightly_App. Just one click and your wallet is synced up, reading real-time on-chain data straight from the CookieScan RPC! ⚡️
