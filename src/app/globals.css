@@ -1,26 +1,62 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 250, 250, 250;
-  --background-end-rgb: 255, 255, 255;
+@layer base {
+  body {
+    background-color: #0b0e14;
+    color: #f3f4f6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+/* Custom Web3 Card Styles & Glassmorphism */
+.glass-panel {
+  background: rgba(18, 24, 38, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-/* Custom Wallet Adapter button override for the theme */
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(249, 115, 22, 0.35);
+  box-shadow: 0 12px 30px -10px rgba(249, 115, 22, 0.15);
+}
+
+.cookie-gradient-text {
+  background: linear-gradient(135deg, #fb923c 0%, #f97316 50%, #ea580c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cookie-glow {
+  box-shadow: 0 0 40px -5px rgba(249, 115, 22, 0.3);
+}
+
+/* Solana Wallet Adapter Custom UI */
 .wallet-adapter-button {
-  background-color: #f97316 !important; /* Tailwind orange-500 */
-  border-radius: 0.75rem !important; /* xl */
-  font-family: inherit !important;
+  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%) !important;
+  color: #ffffff !important;
   font-weight: 700 !important;
+  font-size: 0.95rem !important;
+  border-radius: 9999px !important;
+  padding: 0 1.5rem !important;
+  height: 2.75rem !important;
+  box-shadow: 0 4px 14px 0 rgba(249, 115, 22, 0.39) !important;
+  transition: all 0.2s ease !important;
+  border: none !important;
 }
 
 .wallet-adapter-button:hover {
-  background-color: #ea580c !important; /* Tailwind orange-600 */
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 100%) !important;
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.45) !important;
+}
+
+.wallet-adapter-modal-wrapper {
+  background: #111827 !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 1.25rem !important;
 }
