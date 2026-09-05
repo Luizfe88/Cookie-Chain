@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 250, 250, 250;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-start-rgb));
+}
+
+/* Custom Wallet Adapter button override for the theme */
+.wallet-adapter-button {
+  background-color: #f97316 !important; /* Tailwind orange-500 */
+  border-radius: 0.75rem !important; /* xl */
+  font-family: inherit !important;
+  font-weight: 700 !important;
+}
+
+.wallet-adapter-button:hover {
+  background-color: #ea580c !important; /* Tailwind orange-600 */
+}
